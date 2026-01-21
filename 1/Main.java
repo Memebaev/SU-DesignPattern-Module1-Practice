@@ -90,7 +90,7 @@ class Fleet {
         List<Vehicle> foundVehicles = new ArrayList<>();
         for (Garage garage : garageList){
             for (Vehicle vehicle : garage.getVehicles()){
-                if (vehicle.getMarka() == marka && vehicle.getModel() == model && vehicle.getYear() == year){
+                if (vehicle.getMarka().equals(marka) && vehicle.getModel().equals(model) && vehicle.getYear() == year) {
                     foundVehicles.add(vehicle);
                 }
             }
