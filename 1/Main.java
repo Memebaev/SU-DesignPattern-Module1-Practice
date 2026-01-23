@@ -35,6 +35,7 @@ class Car extends Vehicle {
         this.doors = doors;
         this.transmission = transmission;
     }
+    @Override
     public String toString() {
         return marka + " " + model + " " + year + " " + doors + " " + transmission;
     }
@@ -48,6 +49,7 @@ class Motorcycle extends Vehicle {
         this.kuzov = kuzov;
         this.box = box;
     }
+    @Override
     public String toString() {
         return marka + " " + model + " " + year + " " + kuzov + " " + box;
     }
@@ -67,6 +69,7 @@ class Garage {
     List<Vehicle> getVehicles() {
         return vehicleList;
     }
+    @Override
     public String toString() {
         return "Garage [Vehicles=" + vehicleList + "]";
     }
